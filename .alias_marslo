@@ -56,4 +56,5 @@ export LESS_TERMCAP_us=$(printf "\e[1;32m")         # begin underline
 # The setting about history
 export HISTCONTROL=erasedups
 export HISTCONTROL=ignoredups
+export HISTTIMEFORMAT='%F %T '
 
