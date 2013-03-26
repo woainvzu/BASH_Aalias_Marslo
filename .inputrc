@@ -1,14 +1,25 @@
 set completion-ignore-case on
 set show-all-if-ambiguous on
 set show-all-if-unmodified on
- 
-set editing-mode vi
+
 set keymap vi-insert
- 
+set editing-mode vi
+
 "\C-p": previous-history
 "\C-n": next-history
 "\C-a": beginning-of-line
 "\C-e": end-of-line
- 
-"\e.": yank-last-arg
+"\C-f": forward-char
+"\C-b": backward-char
+
+"\et": transpose-words
+"\ef": forward-word
+"\eb": backward-word
+"\ed": kill-word
+"\C-w": unix-word-rubout
+
+"\C-d": delete-char
+"\C-h": backward-delete-char
+
+"\e.":yank-last-arg
 "\e_": yank-last-arg
