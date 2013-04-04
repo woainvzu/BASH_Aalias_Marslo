@@ -21,6 +21,7 @@ alias vnccreate='vncserver :99 -name marslo -geometry 1280x1024'
 
 alias is='irb --simple-prompt'
 alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
+alias ipy='ipython qtconsole --IPythonWidget.font_size=12 --IPythonWidget.font_family=Monaco --color=linux --style=marslo'
 alias ro='ssh root@localhost'
 
 alias shutdown='sudo shutdown -h now'
