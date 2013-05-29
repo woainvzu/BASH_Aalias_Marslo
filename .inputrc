@@ -2,8 +2,14 @@ set completion-ignore-case on
 set show-all-if-ambiguous on
 set show-all-if-unmodified on
 
-set keymap vi-insert
 set editing-mode vi
+
+# Command Mode
+set keymap vi-command
+v: ""
+
+# Insert Mode
+set keymap vi-insert
 
 "\C-p": previous-history
 "\C-n": next-history
@@ -23,3 +29,4 @@ set editing-mode vi
 
 "\e.":yank-last-arg
 "\e_": yank-last-arg
+
