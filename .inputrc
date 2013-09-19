@@ -2,6 +2,7 @@ set completion-ignore-case on
 set show-all-if-ambiguous on
 set show-all-if-unmodified on
 
+set keymap vi-insert
 set editing-mode vi
 
 # Command Mode
@@ -10,6 +11,9 @@ v: ""
 
 # Insert Mode
 set keymap vi-insert
+
+"\C-k": kill-line
+"\C-u": unix-line-discard
 
 "\C-p": previous-history
 "\C-n": next-history
@@ -30,3 +34,4 @@ set keymap vi-insert
 "\e.":yank-last-arg
 "\e_": yank-last-arg
 
+"\C-_": undo
