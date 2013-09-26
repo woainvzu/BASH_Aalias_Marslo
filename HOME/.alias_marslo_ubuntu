@@ -18,15 +18,18 @@ alias l='ls -lthrNF --color=always'
 alias la='ls -althrNF --color=always'
 
 alias uh='du -h --max-depth=1 --exclude='\./\.*''
+alias c='clear'
 
 alias d='cd -'
 alias dc='cd $1'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias c='clear'
 
-alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
+alias gi='cd /home/marslo/Tools/Git'
+
+# alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
+alias which='alias | /bin/which -a'
 alias ro='ssh -oStrictHostKeyChecking=no -oCheckHostIP=no root@localhost'
 alias or='`stty -echo`; /usr/bin/expect $HOME/.exp; `stty echo `'
 
