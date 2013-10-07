@@ -71,11 +71,11 @@ $ sudo make install
 <pre><code>$ sudo shutdown -r now </code></pre>
 
 ### Change settings in Sound Card
-- Input `alsamixer`:
+- Input `alsamixer`, and input <F6> to select sound card:
 <pre><code>$ alsamixer</code></pre>
 ![alsamixer](https://github.com/woainvzu/MarsloLinuxStuff/blob/master/Screenshots/alsamixer.png?raw=true)
 - Startup Settings
-<pre><code>Name： <Everything_You_Want>
+<pre><code>Name： [Everything_You_Want]
 Command: /sbin/alsactl restore
 </code></pre>
 
