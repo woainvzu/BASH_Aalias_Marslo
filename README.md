@@ -3,16 +3,13 @@ Marslo Linux Stuff
 The config and scripts in Linux
 
 ## Version:
-    FileName: README.md
-    Desc: 
-    Author: Marslo
-    Email: marslo.vida@gmail.com
-
-    Created: 2013-10-07 21:43:42
-    Version: 0.0.1
-    LastChange: 2013-10-07 21:43:42
-    History:
-            0.0.1 | Marslo | init
+Author: Marslo   
+Email: marslo.vida@gmail.com   
+Created: 2013-10-07 21:43:42   
+Version: 0.0.1   
+LastChange: 2013-10-07 21:43:42   
+History:   
+        0.0.1 | Marslo | init   
 
 ## HOME config usage:
 - Add the following statement in `.bashrc` or `/etc/bashrc`(RHEL/CentOS) or `/etc/bash.bashrc`(Ubunut) :
@@ -22,7 +19,7 @@ The config and scripts in Linux
     Add the **.inputrc** in `$HOME`
 
 ## ALSA Settings:
-### Informatons
+### Informations
 - Check the **type** of Sound Card:
 <pre><code>$ head -1 /proc/asound/card0/codec#0
 Realtek ALC262
@@ -76,6 +73,7 @@ $ sudo make install
 ### Change settings in Sound Card
 - Input `alsamixer`:
 <pre><code>$ alsamixer</code></pre>
+![alsamixer](https://github.com/woainvzu/MarsloLinuxStuff/blob/master/Screenshots/alsamixer.png?raw=true)
 - Startup Settings
 <pre><code>Name： <Everything_You_Want>
 Command: /sbin/alsactl restore
