@@ -7,6 +7,8 @@ alias mv='mv -i'
 alias cx='chmod u+x'
 alias c='clear'
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 alias d='cd -'
 
 # Show colorful
@@ -19,6 +21,8 @@ alias la='ls -althrNF --color=always'
 
 alias uh='du -h --max-depth=1 --exclude='\./\.*''
 alias c='clear'
+alias ff=firefox
+alias ud='du -h --max-depth=1'
 
 alias d='cd -'
 alias dc='cd $1'

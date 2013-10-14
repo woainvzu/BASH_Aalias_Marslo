@@ -7,6 +7,8 @@ alias mv='mv -i'
 alias cx='chmod u+x'
 alias c='clear'
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 alias d='cd -'
 
 # Show colorful
@@ -25,7 +27,11 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias c='clear'
+alias is='irb --simple-prompt'
+alias uh='du -h --max-depth=1 --exclude='\./\.*''
 
+alias ff=firefox
+alias ud='du -h --max-depth=1'
 alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
 alias ro='ssh -oStrictHostKeyChecking=no -oCheckHostIP=no root@localhost'
 alias or='`stty -echo`; /usr/bin/expect $HOME/.exp; `stty echo `'
