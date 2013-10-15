@@ -7,7 +7,7 @@ Author: Marslo
 Email: marslo.vida@gmail.com   
 Created: 2013-10-07 21:43:42   
 Version: 0.0.1   
-LastChange: 2013-10-07 21:43:42   
+LastChange: 2013-10-15 22:58:34
 History:   
         0.0.1 | Marslo | init   
 
@@ -15,7 +15,7 @@ History:
 - Add the following statement in `.bashrc` or `/etc/bashrc`(RHEL/CentOS) or `/etc/bash.bashrc`(Ubunut) :
 <pre><code>source PATH_OF_alias_marslo/.alias_marslo[_ubuntu]
 </code></pre>
-- inputrc:  
+- inputrc:
     Add the **.inputrc** in `$HOME`
 - The vim in github: 
 <pre><code>$ git clone git@github.com:b4winckler/vim.git
