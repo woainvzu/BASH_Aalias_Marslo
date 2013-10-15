@@ -10,6 +10,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias d='cd -'
+alias dc='cd $1'
 
 # Show colorful
 alias grep='grep -i --color=auto'
@@ -20,18 +21,10 @@ alias l='ls -lthrNF --color=always'
 alias la='ls -althrNF --color=always'
 
 alias uh='du -h --max-depth=1 --exclude='\./\.*''
-
-alias d='cd -'
-alias dc='cd $1'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
 alias c='clear'
 alias is='irb --simple-prompt'
-alias uh='du -h --max-depth=1 --exclude='\./\.*''
 
 alias ff=firefox
-alias ud='du -h --max-depth=1'
 alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
 alias ro='ssh -oStrictHostKeyChecking=no -oCheckHostIP=no root@localhost'
 alias or='`stty -echo`; /usr/bin/expect $HOME/.exp; `stty echo `'
