@@ -13,10 +13,13 @@ History:
 
 ## HOME config usage:
 - Add the following statement in `.bashrc` or `/etc/bashrc`(RHEL/CentOS) or `/etc/bash.bashrc`(Ubunut) :
-<pre><code>source PATH_OF_alias_marslo/alias_marslo
+<pre><code>source PATH_OF_alias_marslo/.alias_marslo[_ubuntu]
 </code></pre>
 - inputrc:  
     Add the **.inputrc** in `$HOME`
+- The vim in github: 
+<pre><code>$ git clone git@github.com:b4winckler/vim.git
+</code></pre>
 
 ## ALSA Settings:
 ### Informations

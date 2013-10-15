@@ -19,11 +19,14 @@ alias egrep='egrep -i --color=auto'
 alias ls='ls -NF --color=always'
 alias l='ls -lthrNF --color=always'
 alias la='ls -althrNF --color=always'
+alias l.='ls -d .* --color=always' 
 
 alias uh='du -h --max-depth=1 --exclude='\./\.*''
+alias ud='du -h --max-depth=1'
 alias c='clear'
+alias vnccreate='vncserver :99 -name marslo -geometry 1280x1024'
 
-
+alias ff=firefox
 alias gi='cd /home/marslo/Tools/Git'
 alias ru='cd /home/marslo/Study/Codes/Ruby'
 
@@ -47,14 +50,18 @@ alias stopmysql='sudo service mysql stop'
 alias lmsq='mysql -u marslo -p --auto-rehash'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Prompt: username@hostname time path $/#
-export PS1="\[\e[1;32m\]\u\[\e[m\]\[\e[1;33m\]@\[\e[1m\]\[\e[1;31m\]\h\[\e[1m\] \[\e[1;33m\]\t\[\e[m\] \[\e[1;34m\]\W\[\e[m\] \`if [ \$? = 0 ]; then echo \[\e[1\;32m\]\\$\[\e[1m\]; else echo \[\e[1\;31m\]\\$\[\e[0m\]; fi\` \[\e[0;0m\]"
-# [USERNAME@HOSTNAME ~/.vim/colors]
+# Prompt: [USERNAME@HOSTNAME PATH]
+export PS1="\[\e[1;30m\][\u@\h \[\e[1;31m\]\w\[\e[1;30m\]]\n\[\e[1;30m\]\`if [ \$? = 0 ]; then echo \[\e[1\;32m\]\\$\[\e[1m\]; else echo \[\e[1\;31m\]\\$\[\e[0m\]; fi\` \[\e[0;0m\]"
+
+# [USERNAME@HOSTNAME PATH]
 # $
 #   PS1='\[\e[1;30m\][\u@\h \[\e[1;31m\]\w\[\e[1;30m\]]\n\[\e[1;30m\]\$ \[\e[0m\]'
 #   PS1="\[\e[1;30m\][\u@\h \[\e[1;31m\]\w\[\e[1;30m\]]\n\[\e[1;30m\]\`if [ \$? = 0 ]; then echo \[\e[1\;32m\]\\$\[\e[1m\]; else echo \[\e[1\;31m\]\\$\[\e[0m\]; fi\` \[\e[0;0m\]"
 #   PS1="\[\e[1;34m\]\u@\h \[\e[1;31m\]\w\[\e[1;30m\]\n\[\e[1;30m\]\`if [ \$? = 0 ]; then echo \[\e[1\;32m\]\\$\[\e[1m\]; else echo \[\e[1\;31m\]\\$\[\e[0m\]; fi\` \[\e[0;0m\]"
+#
 # Promot in Ubuntu
+# USERNAME@HOSTNAME TIME PATH $
+#   PS1="\[\e[1;32m\]\u\[\e[m\]\[\e[1;33m\]@\[\e[1m\]\[\e[1;31m\]\h\[\e[1m\] \[\e[1;33m\]\t\[\e[m\] \[\e[1;34m\]\W\[\e[m\] \`if [ \$? = 0 ]; then echo \[\e[1\;32m\]\\$\[\e[1m\]; else echo \[\e[1\;31m\]\\$\[\e[0m\]; fi\` \[\e[0;0m\]"
 # export PS1="\[\e[0;32m\]\u\[\e[m\] \[\e[0;33m\]\t\[\e[m\] \[\e[0;34m\]\W\[\e[m\] \`if [ \$? = 0 ]; then echo \[\e[0\;32m\]\\$\[\e[1m\]; else echo \[\e[0\;31m\]\\$\[\e[0m\]; fi\` \[\e[0;0m\]"
 # export PS1='\[\e[1;30m\][\u@\h \[\e[1;31m\]\w\[\e[1;30m\]]\n\[\e[1;30m\]\$ \[\e[0m\]'
 
