@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VIM_SRC=$(dirname $(readlink -f $0))/../tools-src/vim
+VIM_SRC=$(dirname $(readlink -f $0))/../vim
 
 if [ ! -d "$VIM_SRC" ]; then
   echo "Bad VIM source path. Exit."
