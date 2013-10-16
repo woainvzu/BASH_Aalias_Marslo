@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VIM_SRC=$(dirname $(readlink -f $0))/../vim
+VIM_SRC=$(dirname $(readlink -f $0))/../../vim_src/
 
 if [ ! -d "$VIM_SRC" ]; then
   echo "Bad VIM source path. Exit."
@@ -10,7 +10,7 @@ fi
 pushd $VIM_SRC
 
 git pull
-./configure --prefix=/home/mpp/w3liu/tools --with-features=huge > vim-build.log
+./configure --prefix=$HOME/.tools/vim74 --with-features=huge > vim-build.log
 make -j3 >> vim-build.log
 make install >> vim-build.log
 
