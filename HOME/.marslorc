@@ -7,6 +7,6 @@ function bello()
         export TERM='xterm-color'
     fi
 
-    export PATH=$HOME/Marslo/.vim/tools/bin:$PATH
+    export PATH=$HOME/Marslo/.vim/tools/bin:$PATH:/home/mika/Marslo/Tools/git-info
     source $HOME/Marslo/.alias_marslo
 }
